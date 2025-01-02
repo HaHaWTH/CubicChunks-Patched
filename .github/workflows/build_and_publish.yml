@@ -3,7 +3,7 @@ name: Java CI
 on:
   push:
     branches:
-      - 'MC_1.12'
+      - 'NON_UPSTREAM_1.12'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,7 +28,7 @@ jobs:
       env:
         sonatypeUsername: ${{ secrets.OSSRH_USERNAME }}
         sonatypePassword: ${{ secrets.OSSRH_PASSWORD }}
-      run: ./gradlew build publish
+      run: ./gradlew build
     - uses: actions/upload-artifact@v4
       with:
         name: Compiled jars
