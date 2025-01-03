@@ -20,6 +20,7 @@
         "common.IPlayerChunkMapEntry",
         "common.MixinAnvilSaveHandler",
         "common.MixinChunk_Column",
+        "common.MixinChunk_Cubes",
         "common.MixinChunkCache_HeightLimits",
         "common.MixinDerivedWorldInfo",
         "common.MixinEntity_DeathFix",
@@ -27,6 +28,7 @@
         "common.MixinEntityTrackerEntry",
         "common.MixinIBlockAccess_MinMaxHeight",
         "common.MixinMinecraftServer",
+        "common.MixinPlayerList",
         "common.MixinRegionFileCache",
         "common.MixinStructureStart",
         "common.MixinWorld",
@@ -64,6 +66,7 @@
         "client.MixinWorldProvider"
     ],
     "server": [
-        "server.MixinDedicatedServer_HeightLimits"
+        "server.MixinDedicatedServer_HeightLimits",
+        "server.MixinDedicatedPlayerList"
     ]
 }

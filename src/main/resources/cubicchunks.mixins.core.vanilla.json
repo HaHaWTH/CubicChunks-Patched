@@ -8,13 +8,11 @@
         "conformVisibility": true
     },
     "mixins": [
-        "common.MixinChunk_Cubes",
+        "common.MixinChunk_Cubes_Vanilla_Sided",
         "common.MixinWorld_HeightLimits_Vanilla_Sided",
         "common.MixinWorldServer",
-        "common.MixinPlayerList"
+        "common.MixinPlayerList_Vanilla_Sided"
     ],
     "client": [],
-    "server": [
-        "server.MixinDedicatedPlayerList"
-    ]
+    "server": []
 }
